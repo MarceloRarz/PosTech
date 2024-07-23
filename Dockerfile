@@ -32,3 +32,4 @@ CMD ["node", "bin/www"]
 
 # Iniciar PostgreSQL e a aplicação Node.js
 #CMD service postgresql start && npm start
+#Teste

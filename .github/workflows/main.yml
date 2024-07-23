@@ -25,5 +25,10 @@ jobs:
 
       - name: Build and Push Docker Image
         run: |
+          docker build -t $DOCKER_USERNAME/postgres:latest .
+          docker push $DOCKER_USERNAME/postgres:latest
+
+      - name: Build and Push Docker Image
+        run: |
           docker build -t $DOCKER_USERNAME/tc_fiap_blogging_back_end-app:latest .
           docker push $DOCKER_USERNAME/tc_fiap_blogging_back_end-app:latest
